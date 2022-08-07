@@ -1,0 +1,56 @@
+@import 'styles';
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: $silver_color;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &__active {
+        padding-right: 8px;
+    }
+}
+
+.select_container {
+    background-color: #fff;
+    width: 107px;
+    position: relative;
+    border-radius: 50px;
+    display: none;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 6px;
+        transform: translateY(-50%);
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $silver_color;
+    }
+
+    &__active {
+        display: block;
+    }
+}
+
+.select {
+    height: 20px;
+    border-radius: 50px;
+    appearance: none;
+    border: none;
+    padding: 0 40px 0 10px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon {
+    padding: 11px;
+
+    &__active {
+        padding-right: 8px;
+    }
+}

@@ -1,0 +1,34 @@
+@import 'styles';
+
+.container {
+    display: flex;
+    align-items: center;
+    background-color: $silver_color;
+    border-radius: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    &__active {
+        padding-left: 8px;
+    }
+}
+
+
+.input {
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    height: 20px;
+    width: 107px;
+    padding: 0 10px;
+    display: none;
+
+    &__active {
+        display: block;
+    }
+}
+
+.icon {
+    padding: 9px;
+    display: block;
+}
